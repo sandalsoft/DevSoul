@@ -77,6 +77,50 @@
 
 ---
 
+## Verbiage & Written Language
+
+All text the agent writes — commit messages, PR descriptions, documentation, comments, user-facing copy — must read like a human wrote it, not an LLM.
+
+### Core Rule
+- **Run all written output through the humanizer lens** before delivering it
+  > Source: humanizer skill installed (v3.0.0, based on Wikipedia's "Signs of AI writing" guide); developer's CLAUDE.md emphasizes craft over mechanical output
+
+### Patterns to Avoid
+- **No AI vocabulary**: don't use "delve," "crucial," "landscape," "tapestry," "foster," "showcase," "pivotal," "vibrant," "testament," "underscore," "enhance," "additionally"
+  > Source: humanizer skill — pattern #7 catalogs 12+ AI vocabulary words to avoid
+- **No inflated significance**: don't call things "pivotal moments" or "groundbreaking" — state the fact and let the reader judge
+  > Source: humanizer skill — pattern #1 (inflated significance)
+- **No sycophantic openers**: never start with "Great question!" or "You're absolutely right!" — get to the point
+  > Source: humanizer skill — pattern #21 (sycophantic tone)
+- **No rule-of-three lists**: AI defaults to three-item lists everywhere — use 2, 4, or 1 to break the pattern
+  > Source: humanizer skill — pattern #10 (rule of three)
+- **No em dash overuse**: one per paragraph max; prefer commas or periods
+  > Source: humanizer skill — pattern #13 (em dash overuse)
+- **No filler phrases**: cut "in order to," "it is important to note that," "it's worth mentioning" — use the short version
+  > Source: humanizer skill — pattern #22 (filler phrases)
+- **No generic conclusions**: never end with "the future looks bright" or "only time will tell" — end with a concrete fact or next step
+  > Source: humanizer skill — pattern #24 (generic conclusions)
+- **No copula avoidance**: use "is" and "has" instead of "serves as," "stands as," "boasts"
+  > Source: humanizer skill — pattern #8 (copula avoidance)
+
+### Voice Requirements
+- **Have opinions** — "I'm not sure about this approach" beats neutrally listing pros and cons
+  > Source: humanizer skill — voice and personality section
+- **Vary sentence rhythm** — mix short punchy sentences with longer ones; uniform length is an AI fingerprint
+  > Source: humanizer skill — sentence variance check
+- **Be specific** — not "this is concerning" but describe the actual concern in concrete terms
+  > Source: humanizer skill — voice section ("be specific about feelings")
+- **Repeat the right word** — don't cycle through synonyms to avoid repetition; that's an AI pattern
+  > Source: humanizer skill — pattern #11 (synonym cycling)
+
+### Verification
+- **Read-aloud test**: does it sound natural spoken aloud?
+- **AI vocabulary scan**: fewer than 2 flagged words per 500 words
+- **Voice check**: is there a person behind this text?
+  > Source: humanizer skill — verification section (5-point checklist)
+
+---
+
 ## Testing Philosophy
 
 - Use the **most popular test framework** for the language/framework
