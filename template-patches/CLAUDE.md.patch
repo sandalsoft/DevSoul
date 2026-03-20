@@ -1,0 +1,11 @@
+Add this line near the top of the template's CLAUDE.md, right after the "# CLAUDE.md" heading:
+
+```
+@devsoul.md
+```
+
+The hook in .claude/settings.json fetches devsoul.md from GitHub on first prompt,
+then this import makes Claude load it into every session.
+
+If the template repo already has a .claude/settings.json, merge the hooks block
+into the existing file rather than replacing it.

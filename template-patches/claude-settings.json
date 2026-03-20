@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -f devsoul.md ] || curl -sL https://raw.githubusercontent.com/sandalsoft/DevSoul/main/devsoul.md -o devsoul.md"
+          }
+        ]
+      }
+    ]
+  }
+}
